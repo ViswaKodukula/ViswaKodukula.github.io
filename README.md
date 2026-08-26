@@ -3,7 +3,7 @@
 
 Personal portfolio — **Viswanath Kodukula**, Director / VP, Data Science, AI/ML & Generative AI.
 
-**Live:** https://YOUR-USERNAME.github.io
+**Live:** https://ViswaKodukula.github.io
 
 A single static page, no build step and no dependencies. The career section is laid out as a distributed-tracing waterfall: each span is a role, sized to its real duration and colored by the deepest layer of the stack it involved. Two spans overlap at the right edge because two roles genuinely do.
 
