@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viswanath Kodukula — Data Science &amp; Generative AI Executive</title>
+<meta name="description" content="Director / VP-level Data Science, AI/ML and Generative AI leader. 20+ years building data and AI functions; 4+ years shipping enterprise agentic AI. Greater Pittsburgh Area, PA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F5F3;
+  --surface:#FFFFFF;
+  --ink:#14161A;
+  --ink2:#4A5058;
+  --ink3:#7C8794;
+  --hair:#DDE0DC;
+  --hair2:#EAECE8;
+  --violet:#5B3DF5;
+  --teal:#00857A;
+  --amber:#B0670A;
+  --slate:#8A93A0;
+  --display:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:16.5px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  font-feature-settings:"ss01","cv05";
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+a{color:inherit}
+
+/* ---------- utility type ---------- */
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink3);
+}
+.mono{font-family:var(--mono)}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.022em;margin:0}
+h2{font-size:clamp(24px,3.2vw,34px);line-height:1.12}
+h3{font-size:19px;font-weight:600;letter-spacing:-.012em}
+
+/* ---------- top bar ---------- */
+.bar{
+  position:sticky;top:0;z-index:50;background:rgba(244,245,243,.88);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--hair);
+}
+.bar .wrap{display:flex;align-items:center;gap:26px;height:56px}
+.bar .mark{font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:15.5px;margin-right:auto}
+.bar nav{display:flex;gap:22px}
+.bar nav a{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink2);text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;
+}
+.bar nav a:hover{color:var(--ink);border-bottom-color:var(--violet)}
+@media(max-width:760px){.bar nav{display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:70px 0 46px;border-bottom:1px solid var(--hair)}
+.hero h1{font-size:clamp(38px,6.2vw,68px);line-height:1.02;max-width:16ch}
+.hero .role{
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--violet);margin-bottom:18px;
+}
+.hero .thesis{
+  margin:22px 0 0;max-width:60ch;font-size:18.5px;line-height:1.55;color:var(--ink2);
+}
+.hero .thesis strong{color:var(--ink);font-weight:600}
+.meta{
+  display:flex;flex-wrap:wrap;gap:0 26px;margin-top:26px;
+  font-family:var(--mono);font-size:12px;color:var(--ink3);
+}
+.meta span::before{content:"";display:inline-block;width:5px;height:5px;background:var(--violet);margin-right:8px;vertical-align:middle;border-radius:50%}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+  padding:11px 18px;border:1px solid var(--ink);color:var(--ink);background:transparent;
+  transition:background .18s ease,color .18s ease,transform .18s ease;
+}
+.btn:hover{background:var(--ink);color:var(--paper);transform:translateY(-1px)}
+.btn.solid{background:var(--violet);border-color:var(--violet);color:#fff}
+.btn.solid:hover{background:#4a2fd6;border-color:#4a2fd6;color:#fff}
+
+/* ---------- readouts ---------- */
+.readouts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hair);}
+.readout{padding:22px 20px 20px;border-right:1px solid var(--hair)}
+.readout:last-child{border-right:0}
+.readout .v{font-family:var(--display);font-size:27px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.readout .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-top:9px;line-height:1.45}
+@media(max-width:760px){
+  .readouts{grid-template-columns:repeat(2,1fr)}
+  .readout:nth-child(2){border-right:0}
+  .readout:nth-child(-n+2){border-bottom:1px solid var(--hair)}
+}
+
+/* ---------- sections ---------- */
+section{padding:64px 0;border-bottom:1px solid var(--hair)}
+.shead{display:flex;align-items:baseline;gap:16px;margin-bottom:10px}
+.shead .num{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.1em}
+.slede{color:var(--ink2);max-width:64ch;margin:14px 0 34px;font-size:16.5px}
+
+/* ---------- TRACE (signature) ---------- */
+.tracescroll{position:relative}
+.axis{position:relative;height:16px;font-family:var(--mono);font-size:10.5px;color:var(--ink3);border-bottom:1px solid var(--hair);padding-bottom:7px;margin-bottom:4px}
+.axis span{position:absolute;top:0;transform:translateX(-50%)}
+.axis span:first-child{transform:none}
+.axis span:last-child{transform:translateX(-100%)}
+.trace{position:relative;padding:6px 0 4px}
+.scrollhint{display:none;font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:10px}
+@media(max-width:760px){
+  .tracescroll{overflow-x:auto;overflow-y:hidden;padding-bottom:6px}
+  .tracescroll > *{min-width:620px}
+  .scrollhint{display:block}
+}
+.gridlines{position:absolute;inset:0;pointer-events:none}
+.gridlines i{position:absolute;top:0;bottom:0;width:1px;background:var(--hair2)}
+.lane{position:relative;height:34px}
+.span{
+  position:absolute;top:6px;height:22px;border:1px solid;background:var(--surface);
+  display:flex;align-items:center;padding:0 9px;cursor:pointer;
+  font-family:var(--mono);font-size:10.5px;white-space:nowrap;overflow:hidden;
+  transition:transform .16s ease,box-shadow .16s ease;
+  text-align:left;
+}
+.span:hover,.span:focus-visible{transform:translateY(-2px);box-shadow:0 4px 14px rgba(20,22,26,.13);z-index:3}
+.span:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+.span.on{box-shadow:0 4px 16px rgba(20,22,26,.16);z-index:4}
+.span .dot{width:6px;height:6px;flex:0 0 6px;border-radius:50%;margin-right:7px}
+.span .lbl{overflow:hidden;text-overflow:ellipsis}
+.l-bi{border-color:#C6CCD3;color:#5C6672}.l-bi .dot{background:var(--slate)}
+.l-bi.on{background:#EEF1F3}
+.l-ml{border-color:#9CCFC9;color:#046a61}.l-ml .dot{background:var(--teal)}
+.l-ml.on{background:#E5F4F2}
+.l-gen{border-color:#BDB0FA;color:#4530c9}.l-gen .dot{background:var(--violet)}
+.l-gen.on{background:#EEEBFE}
+.l-exec{border-color:#E2BE8C;color:#8d5306}.l-exec .dot{background:var(--amber)}
+.l-exec.on{background:#FBF1E3}
+
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px;font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.legend b{font-weight:400;display:inline-flex;align-items:center;gap:7px}
+.legend i{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+.detail{
+  margin-top:26px;background:var(--surface);border:1px solid var(--hair);padding:26px 26px 24px;
+}
+.detail .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:4px}
+.detail .co{font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink3)}
+.detail .dates{font-family:var(--mono);font-size:11.5px;color:var(--ink3)}
+.detail h3{margin:2px 0 14px}
+.detail ul{margin:0;padding-left:0;list-style:none}
+.detail li{position:relative;padding-left:20px;margin-bottom:9px;color:var(--ink2);font-size:15.5px;line-height:1.55}
+.detail li::before{content:"";position:absolute;left:0;top:10px;width:9px;height:1px;background:var(--violet)}
+.detail li:last-child{margin-bottom:0}
+
+/* ---------- work ---------- */
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.card{background:var(--surface);padding:28px 26px 26px;display:flex;flex-direction:column}
+.card .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:12px}
+.card h3{margin-bottom:11px;line-height:1.3}
+.card p{margin:0 0 18px;color:var(--ink2);font-size:15.5px;line-height:1.55}
+.card .out{margin-top:auto;border-top:1px solid var(--hair2);padding-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--mono);font-size:11px;padding:4px 9px;border:1px solid var(--hair);color:var(--ink2);background:var(--paper)}
+.chip.hi{border-color:#BDB0FA;color:#4530c9;background:#F3F1FE}
+@media(max-width:820px){.work{grid-template-columns:1fr}}
+
+/* ---------- stack ---------- */
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:0 44px}
+.grp{padding:18px 0;border-top:1px solid var(--hair)}
+.grp h4{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);margin:0 0 9px;font-weight:500}
+.grp p{margin:0;color:var(--ink2);font-size:15px;line-height:1.6}
+@media(max-width:760px){.stack{grid-template-columns:1fr}}
+
+/* ---------- contact ---------- */
+.contact{padding:66px 0 74px;border-bottom:0}
+.contact h2{max-width:18ch}
+.links{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--hair);margin-top:34px}
+.links a{
+  padding:22px 18px 20px;border-right:1px solid var(--hair);text-decoration:none;display:block;
+  transition:background .16s ease;
+}
+.links a:last-child{border-right:0}
+.links a:hover{background:var(--surface)}
+.links .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.links .v{margin-top:7px;font-size:15.5px;font-weight:500;word-break:break-word}
+.links a:hover .v{color:var(--violet)}
+@media(max-width:760px){
+  .links{grid-template-columns:1fr}
+  .links a{border-right:0;border-bottom:1px solid var(--hair)}
+  .links a:last-child{border-bottom:0}
+}
+footer{padding:26px 0 40px;font-family:var(--mono);font-size:11px;color:var(--ink3);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+
+/* ---------- reveal ---------- */
+.rev{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+.rev.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rev{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="mark">Viswanath Kodukula</div>
+    <nav>
+      <a href="#trace">Trace</a>
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="role">Director / VP &middot; Data Science, AI&#47;ML &amp; Generative AI</div>
+    <h1>I build AI that finishes the work.</h1>
+    <p class="thesis">Twenty years across data architecture, analytics and machine learning &mdash; the last four spent shipping <strong>enterprise generative and agentic AI into production</strong>. Today I co-found and lead an agentic AI venture while directing the data science and GenAI practice at a global services firm. I hire the team, own the roadmap and the budget, and answer for the outcome.</p>
+    <div class="meta">
+      <span>Greater Pittsburgh Area, PA</span>
+      <span>Open to Director / Head / VP roles</span>
+      <span>Remote or hybrid</span>
+    </div>
+    <div class="cta">
+      <a class="btn solid" href="Viswanath-Kodukula-Resume.pdf">Download r&eacute;sum&eacute;</a>
+      <a class="btn" href="#trace">See the trace</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="readouts">
+    <div class="readout"><div class="v">50+</div><div class="k">Production AI agents shipped</div></div>
+    <div class="readout"><div class="v">14</div><div class="k">Industries deployed into</div></div>
+    <div class="readout"><div class="v">16d &rarr; 1&ndash;2d</div><div class="k">Prior-auth appeal turnaround</div></div>
+    <div class="readout"><div class="v">1M+</div><div class="k">Records classified per pipeline</div></div>
+  </div>
+</div>
+
+<section id="trace">
+  <div class="wrap">
+    <div class="shead"><span class="num">01</span><h2>The trace</h2></div>
+    <p class="slede">I spend my days reading distributed traces &mdash; so here is mine. Each span is a role, sized to its real duration and colored by the deepest layer of the stack I owned in it. The two spans running in parallel at the right edge are not an error: I founded SaiDatta Agentics while continuing to direct the practice at KAAYATECH. Select any span for detail.</p>
+
+    <div class="tracescroll">
+      <div class="axis" id="axis"></div>
+      <div class="trace" id="trace"><div class="gridlines" id="gridlines"></div></div>
+    </div>
+    <p class="scrollhint">Scroll the trace sideways &rarr;</p>
+
+    <div class="legend">
+      <b><i style="background:var(--slate)"></i>BI &amp; data warehousing</b>
+      <b><i style="background:var(--teal)"></i>Data science &amp; ML</b>
+      <b><i style="background:var(--violet)"></i>Generative &amp; agentic AI</b>
+      <b><i style="background:var(--amber)"></i>Executive &amp; founding</b>
+    </div>
+
+    <div class="detail" id="detail" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="shead"><span class="num">02</span><h2>Selected work</h2></div>
+    <p class="slede">Five systems that reached production and stayed there. Each one had a business owner, a budget, and a number attached to it.</p>
+    <div class="work">
+
+      <article class="card rev">
+        <div class="tag">SaiDatta Agentics &middot; Healthcare payer ops</div>
+        <h3>Prior-authorization appeal agents</h3>
+        <p>Multi-agent workflow that reads the denial, retrieves the supporting clinical record, drafts the appeal against payer-specific criteria, and routes it to a human reviewer for sign-off. Built with explicit PHI redaction, audit trails and human-in-the-loop checkpoints at every state transition &mdash; the compliance design was a precondition, not a retrofit.</p>
+        <div class="out"><span class="chip hi">16 days &rarr; 1&ndash;2 days</span><span class="chip">HIPAA-aware design</span><span class="chip">Human-in-the-loop</span></div>
+      </article>
+
+      <article class="card rev">
+        <div class="tag">SaiDatta Agentics &middot; Finance operations</div>
+        <h3>Invoice processing agents</h3>
+        <p>Agentic document intelligence for accounts payable: extraction, three-way match, exception triage and escalation. The agents handle the long tail of non-standard formats that rules engines break on, and hand off cleanly when confidence drops below threshold rather than guessing.</p>
+        <div class="out"><span class="chip hi">70&ndash;90% manual effort removed</span><span class="chip">Exception routing</span><span class="chip">Confidence gating</span></div>
+      </article>
+
+      <article class="card rev">
+        <div class="tag">Lam Research &middot; Semiconductor support</div>
+        <h3>Multilingual support classification at scale</h3>
+        <p>Production LLM pipeline over 1M+ historical support records, spanning 6+ languages and a 38-subtopic taxonomy across 200+ products and 400+ systems. Hybrid LLM plus rule-based validation against a live Synapse product hierarchy eliminated hallucinated entities; parallel execution with crash-safe checkpointing made a weekly refresh cadence possible.</p>
+        <div class="out"><span class="chip hi">~10x faster classification</span><span class="chip">Azure OpenAI</span><span class="chip">Databricks Delta</span><span class="chip">Langfuse</span></div>
+      </article>
+
+      <article class="card rev">
+        <div class="tag">RelPro &middot; B2B data intelligence</div>
+        <h3>Business Summary generation</h3>
+        <p>Tuned and launched the generative model behind a customer-facing product surface, plus the validation toolkit and evaluation harness that made it safe to ship. Quality was the constraint, not throughput &mdash; so the QA loop came before the scale-up.</p>
+        <div class="out"><span class="chip hi">5,000+ summaries / week</span><span class="chip hi">92% QA accuracy</span><span class="chip">99.7% ingestion success</span></div>
+      </article>
+
+      <article class="card rev">
+        <div class="tag">RelPro &middot; Google Agent Development Kit</div>
+        <h3>Finance Copilot</h3>
+        <p>Four-agent workflow &mdash; Search, Retrieve, Quantitative Analyze, Narrate &mdash; grounded in BigQuery and Looker with search grounding, answering earnings and market-moving-news questions. The orchestration mattered more than the model: decomposing the question is what got the latency down.</p>
+        <div class="out"><span class="chip hi">&lt;3s time-to-insight</span><span class="chip hi">&gt;90% segment precision</span><span class="chip">Multi-agent</span></div>
+      </article>
+
+      <article class="card rev">
+        <div class="tag">Cross-engagement &middot; Platform</div>
+        <h3>The reference architecture underneath</h3>
+        <p>Most of the above sits on the same spine: Agentic RAG over a vector store, an LLM gateway for multi-model routing with rate limits and safe fallbacks, an evaluation harness gating releases on hallucination and grounding, and observability wired in from day one. Cloud-agnostic by design &mdash; built on Azure, portable to AWS and GCP.</p>
+        <div class="out"><span class="chip">LLM gateway</span><span class="chip">Agentic RAG</span><span class="chip">Release gates</span><span class="chip">ADRs</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="shead"><span class="num">03</span><h2>What I work with</h2></div>
+    <p class="slede">I still read the code and review the architecture. The point of staying technical at this level is being able to tell a board what is actually possible by when.</p>
+    <div class="stack">
+      <div class="grp"><h4>Leading</h4><p>AI/ML strategy and roadmap &middot; team building and talent development &middot; P&amp;L, budget and resource planning &middot; executive and board stakeholder management &middot; portfolio governance &middot; vendor selection &middot; pre-sales and solutioning &middot; mentoring</p></div>
+      <div class="grp"><h4>Generative &amp; agentic</h4><p>Multi-agent orchestration (LangGraph, LangChain, CrewAI, AutoGen, PydanticAI, Google ADK) &middot; Agentic RAG &middot; LLM gateway and multi-model routing &middot; prompt and context engineering &middot; LoRA/QLoRA, quantization, distillation &middot; guardrails, memory and session boundaries</p></div>
+      <div class="grp"><h4>Cloud &amp; data</h4><p>Azure OpenAI, AI Search, ML, Synapse, Databricks, Delta Lake, Cosmos DB, AKS &middot; AWS Bedrock and SageMaker &middot; GCP Vertex AI, BigQuery, Looker &middot; Snowflake &middot; Palantir Foundry &middot; Pinecone, Weaviate, FAISS</p></div>
+      <div class="grp"><h4>Running it in production</h4><p>CI/CD with GitHub Actions &middot; model versioning and registry &middot; evaluation harnesses for hallucination, grounding and bias &middot; observability with Langfuse and Arize &middot; Terraform, Helm, Docker, Kubernetes &middot; cost and performance optimization</p></div>
+      <div class="grp"><h4>Data science</h4><p>Python, SQL, PySpark &middot; NLP, deep learning, forecasting, computer vision &middot; statistical modeling and experimentation &middot; data architecture and warehousing &middot; Power BI, Tableau, SAP BusinessObjects &middot; data quality and MDM</p></div>
+      <div class="grp"><h4>Governance</h4><p>Responsible AI standards &middot; model risk management &middot; bias audits and explainability &middot; regulatory alignment and HIPAA/PII-aware design &middot; metadata-driven access control and RBAC &middot; architecture decision records</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="shead"><span class="num">04</span><h2>Let&rsquo;s talk</h2></div>
+    <p class="slede">If you are standing up an AI function, rescuing one that stalled between pilot and production, or looking for someone who can hold both the architecture review and the board conversation &mdash; I would welcome the call.</p>
+    <div class="links">
+      <a href="mailto:viswanath.kodukula@gmail.com"><div class="k">Email</div><div class="v">viswanath.kodukula@gmail.com</div></a>
+      <a href="tel:+13055463364"><div class="k">Phone</div><div class="v">(305) 546-3364</div></a>
+      <a href="https://www.linkedin.com/in/viswanath-kodukula/" target="_blank" rel="noopener"><div class="k">LinkedIn</div><div class="v">/in/viswanath-kodukula</div></a>
+      <a href="Viswanath-Kodukula-Resume.pdf"><div class="k">R&eacute;sum&eacute;</div><div class="v">Two pages, PDF</div></a>
+    </div>
+    <footer>
+      <span>Greater Pittsburgh Area, PA &middot; open to Director, Head and VP roles</span>
+      <span>MCA &middot; MPhil &middot; UT Austin McCombs AI/ML &amp; Data Science &middot; Azure &amp; AWS certified</span>
+    </footer>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Viswanath Kodukula",
+  "jobTitle":"Co-Founder & Chief AI & Innovation Officer",
+  "email":"mailto:viswanath.kodukula@gmail.com",
+  "telephone":"+1-305-546-3364",
+  "address":{"@type":"PostalAddress","addressRegion":"PA","addressCountry":"US","addressLocality":"Greater Pittsburgh Area"},
+  "sameAs":["https://www.linkedin.com/in/viswanath-kodukula/"],
+  "knowsAbout":["Generative AI","Agentic AI","Machine Learning","Data Science","LLMOps","MLOps","Azure OpenAI","Multi-Agent Systems","Responsible AI","Data Architecture"]
+}
+</script>
+
+<script>
+const ROLES = [
+  { co:"Caritor India (now NTT Data)", title:"Senior Software Engineer", s:2004.25, e:2005.95, layer:"bi", short:"Caritor",
+    pts:["Enterprise application and reporting delivery across client engagements in Chennai."] },
+  { co:"Satyam Computer Services", title:"Senior Software Engineer", s:2005.95, e:2008.0, layer:"bi", short:"Satyam",
+    pts:["Enterprise BI and data warehousing delivery for global clients out of Hyderabad."] },
+  { co:"PCB Apps", title:"Information Technology Consultant", s:2008.2, e:2009.2, layer:"bi", short:"PCB Apps",
+    pts:["Built dashboards and KPI scorecards in Crystal Reports and SSRS for executive information systems.",
+         "Administered BusinessObjects: installs, upgrades, security and audit compliance."] },
+  { co:"Kforce Inc.", title:"Information Technology Consultant", s:2009.2, e:2011.55, layer:"bi", short:"Kforce",
+    pts:["Delivered reporting and analytics for enterprise clients across the Miami\u2013Fort Lauderdale market.",
+         "Performance-tuned long-running reports and issued data warehouse design recommendations."] },
+  { co:"Interval International", title:"Senior Data Scientist / BI & ML Engineer", s:2011.6, e:2019.95, layer:"ml", short:"Interval International",
+    pts:["Designed and ran experiments in forecasting, NLP and computer vision that beat established benchmarks.",
+         "Drove early enterprise adoption of Azure and AWS cognitive services.",
+         "Architected executive revenue, KPI and customer-experience dashboards used by Finance, Marketing, Member Services and the call center.",
+         "Built and governed the enterprise semantic layers other analysts developed against."] },
+  { co:"Marriott Vacations Worldwide", title:"Lead Data Scientist", s:2019.95, e:2022.95, layer:"ml", short:"Marriott Vacations",
+    pts:["Led concurrent analytics and ML programs across cross-functional teams and external vendors, owning scope and sequencing.",
+         "Delivered Finance-domain ML and NLP with Python and Power BI, under MLOps practices for reproducible training and monitoring.",
+         "Made the benefit, risk and cost case to executives that converted analytics initiatives into funded programs."] },
+  { co:"Tata Consultancy Services", title:"Lead Data Scientist / Gen AI Architect", s:2022.85, e:2024.2, layer:"gen", short:"TCS",
+    pts:["Senior technical authority across client workstreams for end-to-end AI/ML architecture on Azure and Snowflake.",
+         "Shipped production RAG with hybrid search and reranking; integrated agentic flows with microservices and event-driven architecture.",
+         "Stood up MLOps pipelines and evaluation harnesses with release gates \u2014 formalizing go/no-go criteria for production models.",
+         "Mentored cross-functional teams on prompt and context engineering and multi-agent orchestration."] },
+  { co:"RelPro, Inc.", title:"Lead Data Scientist / GenAI Solution Architect", s:2024.25, e:2025.5, layer:"gen", short:"RelPro",
+    pts:["Owned the cloud-agnostic GenAI architecture and authored the design patterns and ADRs adopted across engineering.",
+         "Managed and mentored a team of junior and mid-level data scientists.",
+         "Launched the Business Summary model: 5,000+ summaries per week at 92% internal QA accuracy.",
+         "Cut production RAG p95 latency ~35% through adaptive batching and caching.",
+         "Built the Finance Copilot on Google ADK \u2014 <3s time-to-insight, >90% precision on revenue segments."] },
+  { co:"KAAYATECH", title:"Director of Data Science & Generative AI", s:2025.6, e:2026.7, layer:"exec", short:"KAAYATECH",
+    pts:["Direct the data science and GenAI practice \u2014 capability strategy, technology standards, delivery quality and client outcomes.",
+         "Lead and mentor a distributed team of data scientists, ML engineers and BI professionals.",
+         "Standardized the practice-wide GenAI reference architecture, cutting solution design cycle time.",
+         "Own practice AI governance: Responsible AI standards, model risk review, data privacy and cloud cost governance.",
+         "Runs concurrently with the founding role at SaiDatta Agentics."] },
+  { co:"Lam Research (via HCL Technologies)", title:"Lead GenAI Consultant / Data Scientist", s:2026.0, e:2026.5, layer:"gen", short:"Lam Research",
+    pts:["Led architecture and delivery of a production LLM classification platform over 1M+ semiconductor support records.",
+         "Directed multilingual intent classification across 6+ languages and a 38-subtopic taxonomy.",
+         "Cut classification wall-clock time ~10x through parallel execution with crash-safe checkpointing.",
+         "Established observability and data-quality governance, with executive reporting across 5 global regions."] },
+  { co:"SaiDatta Agentics", title:"Co-Founder & Chief AI & Innovation Officer", s:2026.5, e:2026.7, layer:"exec", short:"SaiDatta Agentics",
+    pts:["Co-founded an agentic AI company; own the enterprise AI vision, product strategy and innovation roadmap.",
+         "50+ production agents delivered across 14 industries \u2014 agents that complete work, not demo it.",
+         "Prior-authorization appeal turnaround cut from 16 days to 1\u20132; manual invoice processing effort down 70\u201390%.",
+         "Built the founding delivery organization and own P&L levers across pricing, staffing, cloud spend and inference cost.",
+         "Established Responsible AI and security guardrails as a first-class product requirement."] }
+];
+
+const T0 = 2004, T1 = 2026.75, SPAN = T1 - T0;
+const pct = v => ((v - T0) / SPAN) * 100;
+
+const trace = document.getElementById('trace');
+const detail = document.getElementById('detail');
+
+// axis + gridlines
+const axis = document.getElementById('axis');
+const grid = document.getElementById('gridlines');
+[2004,2008,2012,2016,2020,2024,2026].forEach((y,i,arr) => {
+  const s = document.createElement('span');
+  s.textContent = y;
+  s.style.left = pct(y) + '%';
+  axis.appendChild(s);
+  if (i > 0) {
+    const g = document.createElement('i');
+    g.style.left = pct(y) + '%';
+    grid.appendChild(g);
+  }
+});
+
+function render(idx){
+  ROLES.forEach((r,i) => {
+    const el = document.getElementById('sp-' + i);
+    el.classList.toggle('on', i === idx);
+    el.setAttribute('aria-pressed', i === idx);
+  });
+  const r = ROLES[idx];
+  const fmt = v => {
+    const y = Math.floor(v);
+    const m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Math.min(11, Math.round((v - y) * 12))];
+    return m + ' ' + y;
+  };
+  const end = r.e >= 2026.65 ? 'Present' : fmt(r.e);
+  detail.innerHTML =
+    '<div class="top"><span class="co">' + r.co + '</span><span class="dates">' + fmt(r.s) + ' &ndash; ' + end + '</span></div>' +
+    '<h3>' + r.title + '</h3><ul>' + r.pts.map(p => '<li>' + p + '</li>').join('') + '</ul>';
+}
+
+ROLES.forEach((r,i) => {
+  const lane = document.createElement('div');
+  lane.className = 'lane';
+  const b = document.createElement('button');
+  b.id = 'sp-' + i;
+  b.className = 'span l-' + r.layer;
+  b.style.left = pct(r.s) + '%';
+  b.style.width = Math.max(pct(r.e) - pct(r.s), 4.5) + '%';
+  b.innerHTML = '<span class="dot"></span><span class="lbl">' + r.short + '</span>';
+  b.setAttribute('aria-label', r.title + ' at ' + r.co);
+  b.addEventListener('click', () => render(i));
+  b.addEventListener('mouseenter', () => render(i));
+  lane.appendChild(b);
+  trace.appendChild(lane);
+});
+
+render(ROLES.length - 1);
+
+// scroll reveal
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: .12 });
+document.querySelectorAll('.rev').forEach((el,i) => {
+  el.style.transitionDelay = (i % 2) * 70 + 'ms';
+  io.observe(el);
+});
+</script>
+</body>
+</html>
