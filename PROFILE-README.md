@@ -5,7 +5,7 @@ Greater Pittsburgh Area, PA · Open to Director, Head and VP roles
 
 Twenty years across data architecture, analytics and machine learning — the last four spent shipping enterprise generative and agentic AI into production. Today I co-found and lead an agentic AI venture while directing the data science and GenAI practice at a global services firm.
 
-- 🔗 **Portfolio** — https://YOUR-USERNAME.github.io
+- 🔗 **Portfolio** — https://ViswaKodukula.github.io
 - 💼 **LinkedIn** — https://www.linkedin.com/in/viswanath-kodukula/
 - 📄 **Résumé** — [Download PDF](https://YOUR-USERNAME.github.io/Viswanath-Kodukula-Resume.pdf)
 - ✉️ viswanath.kodukula@gmail.com · (305) 546-3364
